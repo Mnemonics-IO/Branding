@@ -11,18 +11,23 @@
 <body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
     <!-- Nav-Bar-->
     <nav class="bg-white dark:bg-gray-800 shadow-md fixed w-full z-50 top-0">
-        <div class="max-w-7xl mx-auto px-6 lg:px-16">
+        <div class="max-w-7xl mx-auto px-6 lg:px-16 py-2">
             <div class="flex justify-between items-center py-4">
-                <div class="text-2xl font-bold text-gray-700 dark:text-gray-200 hover:text-indigo-800 dark:hover:text-indigo-400">Mnemonics.io</div>
+                <div class="text-2xl font-bold text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-rose-400">Mnemonics.io</div>
                 <div class="hidden md:flex space-x-8">
-                    <a href="#home" class="tracking-wide text-gray-700 dark:text-gray-200 hover:text-indigo-800 dark:hover:text-rose-500 transition-colors">Home</a>
-                    <a href="#about" class="tracking-wide text-gray-700 dark:text-gray-200 hover:text-indigo-800 dark:hover:text-rose-500 transition-colors">About</a>
-                    <a href="#projects" class="tracking-wide text-gray-700 dark:text-gray-200 hover:text-indigo-800 dark:hover:text-rose-400 transition-colors">Projects</a>
-                    <a href="#skills" class="tracking-wide text-gray-700 dark:text-gray-200 hover:text-indigo-800 dark:hover:text-rose-400 transition-colors">Skills</a>
-                    <a href="#contact" class="tracking-wide text-gray-700 dark:text-gray-200 hover:text-indigo-800 dark:hover:text-rose-400 transition-colors">Contact</a>
-                    <button id="darkModeToggle" class="btn-unreal rounded-full">
-                      Theme
-                    </button>
+                    <a href="#home" class="tracking-wide text-gray-700 dark:text-gray-200 hover:text-indigo-800 dark:hover:text-rose-600 transition-colors">Home</a>
+                    <a href="#about" class="tracking-wide text-gray-700 dark:text-gray-200 hover:text-indigo-800 dark:hover:text-rose-600 transition-colors">About</a>
+                    <a href="#projects" class="tracking-wide text-gray-700 dark:text-gray-200 hover:text-indigo-800 dark:hover:text-rose-600 transition-colors">Projects</a>
+                    <a href="#skills" class="tracking-wide text-gray-700 dark:text-gray-200 hover:text-indigo-800 dark:hover:text-rose-600 transition-colors">Skills</a>
+                    <a href="#contact" class="tracking-wide text-gray-700 dark:text-gray-200 hover:text-indigo-800 dark:hover:text-rose-600 transition-colors">Contact</a>
+                    <button id="darkModeToggle" class="p-2 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-300">
+            <svg id="darkModeIcon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <!-- Sun icon -->
+              <path id="sunIcon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h1M3 12H2m15.325-4.243l.707-.707M3.975 19.025l.707-.707m0-10.606l-.707-.707m10.606 0l.707-.707M12 18a6 6 0 100-12 6 6 0 000 12z" class="hidden"></path>
+              <!-- Moon icon -->
+              <path id="moonIcon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" class="hidden"></path>
+            </svg>
+          </button>
                 </div>
             </div>
         </div>
@@ -311,16 +316,22 @@
     </script>
     <script>
         const htmlElement = document.documentElement;
-        const toggleButton = document.getElementById('darkModeToggle');
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const sunIcon = document.getElementById('sunIcon');
+        const moonIcon = document.getElementById('moonIcon');
 
-        // Function to set the theme
+        // Function to set the theme and update the icon
         function setTheme(theme) {
             if (theme === 'dark') {
                 htmlElement.classList.add('dark');
                 localStorage.setItem('theme', 'dark');
+                sunIcon.classList.add('hidden');
+                moonIcon.classList.remove('hidden');
             } else {
                 htmlElement.classList.remove('dark');
                 localStorage.setItem('theme', 'light');
+                sunIcon.classList.remove('hidden');
+                moonIcon.classList.add('hidden');
             }
         }
 
@@ -335,7 +346,7 @@
         }
 
         // Toggle button event listener
-        toggleButton.addEventListener('click', () => {
+        darkModeToggle.addEventListener('click', () => {
             if (htmlElement.classList.contains('dark')) {
                 setTheme('light');
             } else {
