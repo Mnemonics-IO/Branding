@@ -8,37 +8,38 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
-<body class="bg-gray-50">
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
     <!-- Nav-Bar-->
-    <nav class="bg-white shadow-md fixed w-full z-50 top-0">
+    <nav class="bg-white dark:bg-gray-800 shadow-md fixed w-full z-50 top-0">
         <div class="max-w-7xl mx-auto px-6 lg:px-16">
             <div class="flex justify-between items-center py-4">
-                <div class="text-2xl font-bold text-gray-700 hover:text-indigo-600">Mnemonics.io</div>
+                <div class="text-2xl font-bold text-gray-700 dark:text-gray-200 hover:text-indigo-800 dark:hover:text-indigo-400">Mnemonics.io</div>
                 <div class="hidden md:flex space-x-8">
-                    <a href="#home" class="tracking-wide text-gray-700 hover:text-indigo-600 transition-colors">Home</a>
-                    <a href="#about" class="tracking-wide text-gray-700 hover:text-indigo-600 transition-colors">About</a>
-                    <a href="#projects" class="tracking-wide text-gray-700 hover:text-indigo-600 transition-colors">Projects</a>
-                    <a href="#skills" class="tracking-wide text-gray-700 hover:text-indigo-600 transition-colors">Skills</a>
-                    <a href="#contact" class="tracking-wide text-gray-700 hover:text-indigo-600 transition-colors">Contact</a>
+                    <button id="darkModeToggle" class="px-4 py-2 rounded-md bg-gray-200 text-gray-800 dark:bg-gray-700 dark:text-gray-200 transition-colors duration-200">Toggle Dark Mode</button>
+                    <a href="#home" class="tracking-wide text-gray-700 dark:text-gray-200 hover:text-indigo-800 dark:hover:text-indigo-400 transition-colors">Home</a>
+                    <a href="#about" class="tracking-wide text-gray-700 dark:text-gray-200 hover:text-indigo-800 dark:hover:text-indigo-400 transition-colors">About</a>
+                    <a href="#projects" class="tracking-wide text-gray-700 dark:text-gray-200 hover:text-indigo-800 dark:hover:text-indigo-400 transition-colors">Projects</a>
+                    <a href="#skills" class="tracking-wide text-gray-700 dark:text-gray-200 hover:text-indigo-800 dark:hover:text-indigo-400 transition-colors">Skills</a>
+                    <a href="#contact" class="tracking-wide text-gray-700 dark:text-gray-200 hover:text-indigo-800 dark:hover:text-indigo-400 transition-colors">Contact</a>
                 </div>
             </div>
         </div>
     </nav>
 
     <!-- Hero-Section -->
-    <section id="home" class=" text-black py-48 md:py-64 mt-16">
+    <section id="home" class=" text-black dark:text-white py-48 md:py-64 mt-16">
         <div class="max-w-5xl mx-auto px-6 text-center">
-            <h1 class="text-6xl md:text-7xl font-extrabold mb-8">Yo , I'm Mnemos.Loci</h1>
-            <p class="text-2xl md:text-3xl mb-12">Crafting stunning web experiences</p>
+            <h1 class="text-6xl md:text-7xl font-extrabold mb-8 text-gray-900 dark:text-white">Yo , I'm Mnemos.Loci</h1>
+            <p class="text-2xl md:text-3xl mb-12 text-gray-700 dark:text-gray-300">Crafting stunning web experiences</p>
             <div class="space-x-6">
-                <a href="#projects" class="btn-unreal inline-block transform transition-transform hover:scale-105">View My Work</a>
+                <a href="#projects" class="btn-unreal bg-blue-500 inline-block transform transition-transform hover:scale-105">View My Work</a>
                 <a href="#contact" class="btn-secondary inline-block transform transition-transform hover:scale-105">Contact Me</a>
             </div>
         </div>
     </section>
 
     <!-- About-Section -->
-    <section id="about" class="py-20 bg-white">
+    <section id="about" class="py-20 bg-white dark:bg-gray-800">
         <div class="max-w-6xl mx-auto px-6 lg:px-16">
             <h2 class="section-title mb-12 text-center">About Me</h2>
             <div class="grid md:grid-cols-2 gap-12 items-center">
@@ -46,14 +47,14 @@
                     <img src="images/mnemos.jpg" alt="Profile" class="rounded-full shadow-lg w-64 h-64">
                 </div>
                 <div>
-                    <p class="text-lg mb-6">
+                    <p class="text-lg mb-6 text-gray-700 dark:text-gray-300">
                         I am a indie developer and creative writer with over 2 years of experience .
                     </p>
-                    <p class="text-lg">
+                    <p class="text-lg text-gray-700 dark:text-gray-300">
                         In my downtime, I enjoy exploring new tech innovations, contributing to open source, and sipping a well-brewed coffee.
                     </p>
                     <div>
-                        <a href="#contact" class="btn-unreal mt-8 inline-block transform transition-transform hover:scale-105">Let's Collaborate</a>
+                        <a href="#contact" class="btn-unreal bg-aqua mt-8 inline-block transform transition-transform hover:scale-105">Let's Collaborate</a>
                     </div>
                 </div>
             </div>
@@ -61,7 +62,7 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="py-20 bg-gray-50">
+    <section id="skills" class="py-20 bg-gray-50 dark:bg-gray-900">
         <div class="max-w-6xl mx-auto px-6 lg:px-16">
             <h2 class="section-title mb-16">Skills & Stack</h2>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-12">
@@ -69,73 +70,74 @@
                     <div class="bg-gradient-to-r from-blue-400 to-blue-600 p-6 rounded-full w-20 h-20 mx-auto mb-6 flex items-center justify-center shadow-lg">
                         <span class="text-2xl font-bold text-white">Ts</span>
                     </div>
-                    <h3 class="font-semibold text-lg">TypeScript</h3>
+                    <h3 class="font-semibold text-lg text-gray-800 dark:text-gray-200">TypeScript</h3>
                 </div>
                 <div class="text-center transform transition-transform hover:scale-110">
                     <div class="bg-gradient-to-r from-blue-600 to-teal-300 p-6 rounded-full w-20 h-20 mx-auto mb-6 flex items-center justify-center shadow-lg">
                         <span class="text-2xl font-bold text-white">R</span>
                     </div>
-                    <h3 class="font-semibold text-lg">React.js</h3>
+                    <h3 class="font-semibold text-lg text-gray-800 dark:text-gray-200">React.js</h3>
                 </div>
                 <div class="text-center transform transition-transform hover:scale-110">
                     <div class="bg-gradient-to-r from-indigo-600 to-indigo-300 p-6 rounded-full w-20 h-20 mx-auto mb-6 flex items-center justify-center shadow-lg">
                         <span class="text-2xl font-bold text-white">N</span>
                     </div>
-                    <h3 class="font-semibold text-lg">Node.js</h3>
+                    <h3 class="font-semibold text-lg text-gray-800 dark:text-gray-200">Node.js</h3>
                 </div>
                 <div class="text-center transform transition-transform hover:scale-110">
                     <div class="bg-gradient-to-r from-teal-200 to-blue-600 p-6 rounded-full w-20 h-20 mx-auto mb-6 flex items-center justify-center shadow-lg">
                         <span class="text-2xl font-bold text-white">P</span>
                     </div>
-                    <h3 class="font-semibold text-lg hover:text-blue-700">Python</h3>
+                    <h3 class="font-semibold text-lg text-gray-800 dark:text-gray-200 hover:text-blue-700 dark:hover:text-blue-400">Python</h3>
                 </div>
                 <div class="text-center transform transition-transform hover:scale-110">
                     <div class="bg-gradient-to-r from-cyan-500 to-blue-600 p-6 rounded-full w-20 h-20 mx-auto mb-6 flex items-center justify-center shadow-lg">
                         <span class="text-2xl font-bold text-white">G</span>
                     </div>
-                    <h3 class="font-semibold text-lg">Go</h3>
+                    <h3 class="font-semibold text-lg text-gray-800 dark:text-gray-200">Go</h3>
                 </div>
                  <div class="text-center transform transition-transform hover:scale-110">
                     <div class="bg-gradient-to-r from-indigo-500 to-teal-500 p-6 rounded-full w-20 h-20 mx-auto mb-6 flex items-center justify-center shadow-lg">
                         <span class="text-2xl font-bold text-white">V</span>
                     </div>
-                    <h3 class="font-semibold text-lg">Vue.js</h3>
+                    <h3 class="font-semibold text-lg text-gray-800 dark:text-gray-200">Vite.js</h3>
+
                 </div>
                  <div class="text-center transform transition-transform hover:scale-110">
                     <div class="bg-gradient-to-r from-cyan-500 to-blue-600 p-6 rounded-full w-20 h-20 mx-auto mb-6 flex items-center justify-center shadow-lg">
                         <span class="text-2xl font-bold text-white">T</span>
                     </div>
-                    <h3 class="font-semibold text-lg">Tailwind Css</h3>
+                    <h3 class="font-semibold text-lg text-gray-800 dark:text-gray-200">Tailwind Css</h3>
                 </div>
                  <div class="text-center transform transition-transform hover:scale-110">
                     <div class="bg-gradient-to-r from-teal-300 to-blue-400 p-6 rounded-full w-20 h-20 mx-auto mb-6 flex items-center justify-center shadow-lg">
                         <span class="text-2xl font-bold text-white">F</span>
                     </div>
-                    <h3 class="font-semibold text-lg">Flutter</h3>
+                    <h3 class="font-semibold text-lg text-gray-800 dark:text-gray-200">Flutter</h3>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Projects-Section -->
-    <section id="projects" class="py-20 bg-white">
+    <section id="projects" class="py-20 bg-white dark:bg-gray-800">
         <div class="max-w-6xl mx-auto px-6 lg:px-16">
             <h2 class="section-title mb-16">Featured Projects</h2>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
-                <div class="card p-8 transform transition-transform hover:scale-105">
+                <div class="card p-8 transform transition-transform hover:scale-105 bg-white dark:bg-gray-700">
                     <img src="./images/Diego.jpeg" alt="Project 1" class="w-full h-48 object-cover rounded-lg mb-6 shadow-md">
-                    <h3 class="text-2xl font-bold mb-4 text-gray-800">E-Commerce Platform</h3>
-                    <p class="text-gray-600 mb-6">A full-stack e-commerce solution built with React and Node.js, featuring secure payment processing and real-time inventory management.</p>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-800 dark:text-gray-200">E-Commerce Platform</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-6">A full-stack e-commerce solution built with React and Node.js, featuring secure payment processing and real-time inventory management.</p>
                     <div class="flex flex-wrap gap-2">
                         <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">React</span>
                         <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">Node.js</span>
                         <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">MongoDB</span>
                     </div>
                 </div>
-                <div class="card p-8 transform transition-transform hover:scale-105">
+                <div class="card p-8 transform transition-transform hover:scale-105 bg-white dark:bg-gray-700">
                     <img src="./images/swiss.jpg" alt="Project 2" class="w-full h-48 object-cover rounded-lg mb-6 shadow-md">
-                    <h3 class="text-2xl font-bold mb-4 text-gray-800">PJO</h3>
-                    <p class="text-gray-600 mb-6">Ponder Jeopardy Omega is a paranormal novel based in the world of terra two where humanity faces the cost of curosity</p>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-800 dark:text-gray-200">PJO</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-6">Ponder Jeopardy Omega is a paranormal novel based in the world of terra two where humanity faces the cost of curosity</p>
                     <div class="flex flex-wrap gap-2">
                         <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">Paranormal</span>
                         <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-medium">Thriller</span>
@@ -144,8 +146,8 @@
                 </div>
                 <div class="card p-8 transform transition-transform hover:scale-105">
                     <img src="./images/john-the-cook.jpg" alt="Project 3" class="w-full h-48 object-cover rounded-lg mb-6 shadow-md">
-                    <h3 class="text-2xl font-bold mb-4 text-gray-800">Korean Culture</h3>
-                    <p class="text-gray-600 mb-6">Everything about korea</p>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-800 dark:text-gray-200">Korean Culture</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-6">Everything about korea</p>
                     <div class="flex flex-wrap gap-2">
                         <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">JavaScript</span>
                         <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">API</span>
@@ -154,8 +156,8 @@
                 </div>
                 <div class="card p-8 transform transition-transform hover:scale-105">
                     <img src="./images/am.jpg" alt="Project 3" class="w-full h-48 object-cover rounded-lg mb-6 shadow-md">
-                    <h3 class="text-2xl font-bold mb-4 text-gray-800">Beyond Persona</h3>
-                    <p class="text-gray-600 mb-6">A paranormal light novel where reality and virtual reality blend and converge</p>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-800 dark:text-gray-200">Beyond Persona</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-6">A paranormal light novel where reality and virtual reality blend and converge</p>
                     <div class="flex flex-wrap gap-2">
                         <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">Paranormal</span>
                         <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">Lite Sci-fi</span>
@@ -164,8 +166,8 @@
                 </div>
                     <div class="card p-8 transform transition-transform hover:scale-105">
                     <img src="./images/Zoey.jpg" alt="Project 3" class="w-full h-48 object-cover rounded-lg mb-6 shadow-md">
-                    <h3 class="text-2xl font-bold mb-4 text-gray-800">Kpop Demon Hunters</h3>
-                    <p class="text-gray-600 mb-6">Anime content like demon slayer , dragonball super</p>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-800 dark:text-gray-200">Kpop Demon Hunters</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-6">Anime content like demon slayer , dragonball super</p>
                     <div class="flex flex-wrap gap-2">
                         <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">JavaScript</span>
                         <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">API</span>
@@ -174,8 +176,8 @@
                 </div>
                     <div class="card p-8 transform transition-transform hover:scale-105">
                     <img src="./images/mnemos.jpg" alt="Project 3" class="w-full h-48 object-cover rounded-lg mb-6 shadow-md">
-                    <h3 class="text-2xl font-bold mb-4 text-gray-800">Darkwear</h3>
-                    <p class="text-gray-600 mb-6">Minimal and monochrome fashion as always</p>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-800 dark:text-gray-200">Darkwear</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-6">Minimal and monochrome fashion as always</p>
                     <div class="flex flex-wrap gap-2">
                         <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">JavaScript</span>
                         <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">API</span>
@@ -188,14 +190,14 @@
 
     <!-- Contact-Section -->
     <!-- Brand Guideline Section -->
-    <section id="brand-guidelines" class="py-20 bg-gray-50">
+    <section id="brand-guidelines" class="py-20 bg-gray-50 dark:bg-gray-900">
         <div class="max-w-6xl mx-auto px-6 lg:px-16">
             <h2 class="section-title mb-16">Brand Guidelines</h2>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
                 <div class="card p-8 transform transition-transform hover:scale-105">
                     <img src="./src/Brand Guideline/Brand Guideline - Brand Logo.png" alt="Brand Logo" class="w-full h-48 object-contain rounded-lg mb-6 shadow-md bg-white p-4">
-                    <h3 class="text-2xl font-bold mb-4 text-gray-800">Brand Logo</h3>
-                    <p class="text-gray-600 mb-6">The official logo of Mnemonics.io, designed for versatility and recognition.</p>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-800 dark:text-gray-200">Brand Logo</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-6">The official logo of Mnemonics.io, designed for versatility and recognition.</p>
                 </div>
                 <div class="card p-8 transform transition-transform hover:scale-105">
                     <img src="./src/Brand Guideline/Brand Guideline - Color Palette.png" alt="Color Palette" class="w-full h-48 object-contain rounded-lg mb-6 shadow-md bg-white p-4">
@@ -269,7 +271,7 @@
                         <div>
                             <textarea placeholder="Your Message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-black"></textarea>
                         </div>
-                        <button type="submit" class="btn-unreal w-full ">Send Message</button>
+                        <button type="submit" class="btn-unreal bg-aqua w-full ">Send Message</button>
                     </form>
                 </div>
             </div>
@@ -303,6 +305,40 @@
                     behavior: 'smooth'
                 });
             });
+        });
+    </script>
+    <script>
+        const htmlElement = document.documentElement;
+        const toggleButton = document.getElementById('darkModeToggle');
+
+        // Function to set the theme
+        function setTheme(theme) {
+            if (theme === 'dark') {
+                htmlElement.classList.add('dark');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                htmlElement.classList.remove('dark');
+                localStorage.setItem('theme', 'light');
+            }
+        }
+
+        // Initial theme setting based on local storage or system preference
+        const storedTheme = localStorage.getItem('theme');
+        if (storedTheme) {
+            setTheme(storedTheme);
+        } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            setTheme('dark');
+        } else {
+            setTheme('light');
+        }
+
+        // Toggle button event listener
+        toggleButton.addEventListener('click', () => {
+            if (htmlElement.classList.contains('dark')) {
+                setTheme('light');
+            } else {
+                setTheme('dark');
+            }
         });
     </script>
 </body>

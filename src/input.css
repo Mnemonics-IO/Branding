@@ -5,11 +5,15 @@
 
 @layer components {
     .btn-unreal {
-        @apply bg-primary-600 text-white font-bold py-3 px-8 rounded-md shadow-lg hover:bg-cyan-700 hover:text-black focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-opacity-75;
+        @apply text-white bg-indigo-600 font-bold py-3 px-8
+         rounded-md shadow-lg hover:bg-teal-500 hover:text-black 
+         focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-opacity-75 transition-transform duration-300 ease-in-out
+        dark:bg-rose-500 dark:text-white dark:hover:bg-green-400 dark:hover:text-black;
+
     }
 
     .btn-secondary {
-        @apply bg-gray-200 text-gray-800 font-bold py-3 px-8 rounded-md shadow-lg hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-75;
+        @apply font-bold py-3 px-8 rounded shadow-lg text-black bg-white border-black focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-75 ;
     }
 
     .section-title {
@@ -19,24 +23,6 @@
     .card {
         @apply bg-white rounded-lg shadow-lg p-6;
     }
-}
-:root{
-  --brand-primary: hsl(171, 85%, 65%);
-  --brand-secondary: hsl(253, 84%, 18%);
-  --brand-tertiary: hsl(253, 81%, 22%);
-  --blue-50: #eff6ff;
-  --blue-100: #dbeafe;
-  --blue-200: #bfdbfe;
-  --blue-300: #93c5fd;
-  --blue-400: #60a5fa;
-  --blue-500: #3b82f6;
-  --blue-600: #2563eb;
-  --blue-700: #1d4ed8;
-  --blue-800: #1e40af;
-  --blue-900: #1e3a8a;
-  --brand-noir:#000000;
-  --brand-noir:#000000;
-  --brand-solar:#ffffff;
 }
 
 @layer base {

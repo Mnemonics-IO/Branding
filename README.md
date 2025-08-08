@@ -52,7 +52,6 @@ tailwind-portfolio/
 5. **Open the project:**
    - Simply open `index.html` in your web browser
    - Or use a local server for better development experience
-
 ## 📝 Customization
 
 ### Changing Colors
@@ -89,6 +88,7 @@ This portfolio works in all modern browsers:
 - Firefox (latest)
 - Safari (latest)
 - Edge (latest)
+- vivaldi(latest)
 
 ## 📱 Mobile Responsive
 
