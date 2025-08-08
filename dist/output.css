@@ -567,7 +567,7 @@ body{
 }
 
 .btn-unreal{
-  border-radius: 9999px;
+  border-radius: 0.375rem;
   --tw-bg-opacity: 1;
   background-color: rgb(37 99 235 / var(--tw-bg-opacity, 1));
   padding-top: 0.75rem;
@@ -584,7 +584,9 @@ body{
 
 .btn-unreal:hover{
   --tw-bg-opacity: 1;
-  background-color: rgb(29 78 216 / var(--tw-bg-opacity, 1));
+  background-color: rgb(14 116 144 / var(--tw-bg-opacity, 1));
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
 }
 
 .btn-unreal:focus{
@@ -598,7 +600,7 @@ body{
 }
 
 .btn-secondary{
-  border-radius: 9999px;
+  border-radius: 0.375rem;
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity, 1));
   padding-top: 0.75rem;
