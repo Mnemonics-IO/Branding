@@ -1,0 +1,23 @@
+{
+  "name": "tailwind-portfolio",
+  "version": "1.0.0",
+  "description": "A modern portfolio website built with Tailwind CSS",
+  "main": "index.html",
+  "scripts": {
+    "build-css": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css",
+    "dev": "live-server --port=3000"
+  },
+  "keywords": [
+    "portfolio",
+    "tailwindcss",
+    "responsive",
+    "website"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "tailwindcss": "^3.4.17"
+  }
+}

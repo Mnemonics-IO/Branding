@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn-unreal {
+        @apply bg-primary-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-opacity-75;
+    }
+
+    .btn-secondary {
+        @apply bg-gray-200 text-gray-800 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-75;
+    }
+
+    .section-title {
+        @apply text-4xl md:text-5xl font-extrabold text-gray-800 mb-8 text-center;
+    }
+
+    .card {
+        @apply bg-white rounded-lg shadow-lg p-6;
+    }
+}
+:root{
+  --brand-primary: hsl(171, 85%, 65%);
+  --brand-secondary: hsl(253, 84%, 18%);
+  --brand-tertiary: hsl(253, 81%, 22%);
+  --blue-50: #eff6ff;
+  --blue-100: #dbeafe;
+  --blue-200: #bfdbfe;
+  --blue-300: #93c5fd;
+  --blue-400: #60a5fa;
+  --blue-500: #3b82f6;
+  --blue-600: #2563eb;
+  --blue-700: #1d4ed8;
+  --blue-800: #1e40af;
+  --blue-900: #1e3a8a;
+  --brand-noir:#000000;
+  --brand-noir:#000000;
+  --brand-solar:#ffffff;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply font-mono text-gray-700;
+  }
+}
